@@ -30,11 +30,16 @@ public class LoginPage extends BaseTest {
 
 //Actions Methods 
 	public void setname(String name) {
-		txt_username.sendKeys(name);
+	    txt_username.click();  // focus
+	    txt_username.clear();  // clear old value
+	    txt_username.sendKeys(name);
+	   
 	}
 
+
 	public void setEmail(String email) {
-		txt_emailID.sendKeys(email);
+		txt_emailID.clear();		
+		   txt_emailID.sendKeys(email == null ? "" : email);
 	}
 
 	public void click_signUp() {
@@ -57,4 +62,38 @@ public class LoginPage extends BaseTest {
 	public void clickLogin() {
 		btn_login.click();
 	}
+
+    // ========= Getter Methods (for validationMessage) =========
+
+    public WebElement getSignupNameField() {
+        return txt_username;
+    }
+
+    public WebElement getSignupEmailField() {
+        return txt_emailID;
+    }
+
+    public WebElement getLoginEmailField() {
+        return txt_loginemail;
+    }
+
+    public WebElement getLoginPasswordField() {
+        return txt_loginpass;
+    }
+
+
+    // ========= Generic Validation Message Method =========
+    public String getValidationMessage(WebElement field) {
+        return field.getAttribute("validationMessage");
+    }
+    
+    // If there is a server-side "existing email" message:
+    @FindBy(xpath = "//*[contains(text(),'Email Address already exist')]")
+    WebElement emailExistsError;
+
+    public String  getExistingEmailError() {
+        return emailExistsError.getText();
+    }
+
 }
+

@@ -32,7 +32,44 @@ public class DataProviders {
 	}
 	
 	//DataProvider 2
-	
+	@DataProvider(name = "RegisterData")
+	public Object[][] getRegisterData() throws IOException 
+	{
+	    String path = ".\\testData\\Register Test data.xlsx";
+	    ExcelUtility xlutil = new ExcelUtility(path);
+
+	    String sheetName = "register";
+
+	    int totalRows = xlutil.getRowCount(sheetName);     // last row index
+	    int totalCols = xlutil.getCellCount(sheetName, 1); // count columns from row 1
+
+	    // Create 2D array
+	    Object[][] data = new Object[totalRows][totalCols];
+
+	    int actualRow = 0;  // to skip blank rows
+
+	    for (int i = 1; i <= totalRows; i++)  // Start from row 1 (row 0 is header)
+	    {
+	        // Check if row is empty
+	        String firstCell = xlutil.getCellData(sheetName, i, 0);
+
+	        if (firstCell == null || firstCell.trim().equals("")) {
+	            continue;  // Skip empty rows
+	        }
+
+	        for (int j = 0; j < totalCols; j++) 
+	        {
+	            String cellValue = xlutil.getCellData(sheetName, i, j);
+
+	            data[actualRow][j] = (cellValue == null) ? "" : cellValue;
+	        }
+
+	        actualRow++;
+	    }
+
+	    return data;
+	}
+
 	//DataProvider 3
 	
 	//DataProvider 4

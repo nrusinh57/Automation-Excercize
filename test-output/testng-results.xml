@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-17T11:08:50 IST" name="Failed suite [Failed suite [Automationpractice]]" finished-at="2025-11-17T11:09:56 IST" duration-ms="65819">
+  <suite started-at="2025-11-19T16:36:40 IST" name="Automationpractice" finished-at="2025-11-19T16:37:47 IST" duration-ms="67655">
     <groups>
     </groups>
-    <test started-at="2025-11-17T11:08:50 IST" name="SimpleExcution(failed)(failed)" finished-at="2025-11-17T11:09:56 IST" duration-ms="65819">
-      <class name="testCases.TC003_DDTLogin">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC003_DDTLogin@18b0930f]" started-at="2025-11-17T11:08:53 IST" name="setup" finished-at="2025-11-17T11:09:27 IST" duration-ms="34009" status="PASS">
+    <test started-at="2025-11-19T16:36:40 IST" name="SimpleExcution" finished-at="2025-11-19T16:37:47 IST" duration-ms="67655">
+      <class name="testCases.TC005_NegativeRegister">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:36:42 IST" name="setup" finished-at="2025-11-19T16:37:18 IST" duration-ms="36686" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,70 +18,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ddtLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_DDTLogin@18b0930f]" started-at="2025-11-17T11:09:45 IST" name="ddtLoginTest" data-provider="LoginData" finished-at="2025-11-17T11:09:50 IST" duration-ms="5069" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[SHINDEN@GMAIL.COM]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Champ@4149]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[valid]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at testCases.TC003_DDTLogin.ddtLoginTest(TC003_DDTLogin.java:46)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:37:18 IST" name="setup" finished-at="2025-11-19T16:37:19 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ddtLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC003_DDTLogin@18b0930f]" started-at="2025-11-17T11:09:51 IST" name="tearDown" finished-at="2025-11-17T11:09:56 IST" duration-ms="5413" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="validateEmailformat()[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:37:19 IST" name="validateEmailformat" description="verify proper email add format is placed " finished-at="2025-11-19T16:37:23 IST" duration-ms="4249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmailformat -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:37:23 IST" name="setup" finished-at="2025-11-19T16:37:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateEmptyEmail()[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:37:23 IST" name="validateEmptyEmail" description="verify Register without Email id " finished-at="2025-11-19T16:37:26 IST" duration-ms="2703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyEmail -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:37:26 IST" name="setup" finished-at="2025-11-19T16:37:26 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateEmptyName()[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:37:26 IST" name="validateEmptyName" description="verify Registration when name filed isempty" finished-at="2025-11-19T16:37:27 IST" duration-ms="1714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyName -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:37:27 IST" name="setup" finished-at="2025-11-19T16:37:27 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateExstingUser()[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:37:27 IST" name="validateExstingUser" description="verify the user is already registered" finished-at="2025-11-19T16:37:47 IST" duration-ms="19126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateExstingUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC005_NegativeRegister@aafcffa]" started-at="2025-11-19T16:37:47 IST" name="tearDown" finished-at="2025-11-19T16:37:47 IST" duration-ms="821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC003_DDTLogin -->
-    </test> <!-- SimpleExcution(failed)(failed) -->
-  </suite> <!-- Failed suite [Failed suite [Automationpractice]] -->
+      </class> <!-- testCases.TC005_NegativeRegister -->
+    </test> <!-- SimpleExcution -->
+  </suite> <!-- Automationpractice -->
 </testng-results>
